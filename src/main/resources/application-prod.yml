@@ -1,0 +1,18 @@
+spring:
+  # This file is only applied when profile=prod
+  # Cache for @Cacheable in prod (still simple in-memory for now)
+  cache:
+    type: simple
+  config:
+    activate:
+      on-profile: prod
+
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    dev.cnn.developerhoroscope: INFO
+
+server:
+  port: 8081 # can change if something else uses 8080

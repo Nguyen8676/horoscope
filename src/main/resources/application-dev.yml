@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: developer-horoscope
+  # Simple cache for @Cacheable (default is in-memory)
+  cache:
+    type: simple
+  mvc:
+    log-request-details: true  # show query params & headers in logs (useful in dev)
+
+server:
+  port: 8080  # can change if something else uses 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    dev.cnn.developerhoroscope: DEBUG  # your own code = more verbose
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env,loggers
+  endpoint:
+    health:
+      show-details: always

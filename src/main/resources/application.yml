@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: developer-horoscope
+
+  profiles:
+    active: dev   # default profile when running locally
+
+#server:
+#  port: 8080
+#  compression:
+#    enabled: true
+
+logging:
+  file:
+    path: logs
