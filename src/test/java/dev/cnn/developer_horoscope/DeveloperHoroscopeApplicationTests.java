@@ -19,9 +19,10 @@ class DeveloperHoroscopeApplicationTests {
 
 	@Test
 	void getFortuneTesting_shouldReturnGoodDay() throws Exception {
+
 		mockMvc.perform(get("/fortune/testing"))
 				.andExpect(status().isOk())
-				.andExpect(content().string("Today is a good day"));
+				.andExpect(content().string("Today is a good day "));
 	}
 
 }

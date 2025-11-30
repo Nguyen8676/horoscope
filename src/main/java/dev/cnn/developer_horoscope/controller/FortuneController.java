@@ -10,7 +10,7 @@ public class FortuneController {
 
     @GetMapping("/testing")
     public  String getFortune() {
-        return "Today is a good day";
+        return "Today is a good day ";
     }
 
 
