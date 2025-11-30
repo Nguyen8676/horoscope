@@ -22,7 +22,7 @@ class DeveloperHoroscopeApplicationTests {
 
 		mockMvc.perform(get("/fortune/testing"))
 				.andExpect(status().isOk())
-				.andExpect(content().string("Today is a good day "));
+				.andExpect(content().string("Today is a good day"));
 	}
 
 }
